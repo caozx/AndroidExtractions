@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_half"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_capture_pic_finish"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/iv_capture_pic_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_capture_pic_btn_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_capture_pic_by_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@color/transparent"
+            android:text="拍照" />
+
+        <View style="@style/line_divider_horizontal" />
+        
+        
+        <Button
+            android:id="@+id/btn_capture_pic_by_album"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@color/transparent"
+            android:text="从相册选择"/>
+
+        
+    </LinearLayout>
+
+</LinearLayout>
