@@ -12,6 +12,14 @@ public class APP extends Application{
     public void onCreate() {
         super.onCreate();
         theInstance = this;
+
+//        Recovery.getInstance()
+//                .debug(true)
+//                .recoverInBackground(false)
+//                .recoverStack(true)
+//                .mainPage(MainActivity.class)
+//                .callback(new MyCrashCallback())
+//                .init(this);
     }
 
 
