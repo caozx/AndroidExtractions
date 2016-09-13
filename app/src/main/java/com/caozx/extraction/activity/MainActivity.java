@@ -16,13 +16,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.btn_camera_take_photo).setOnClickListener(this);
+        findViewById(R.id.btn_make_crash).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case ACTIVITY_REQUEST_CODE:
+            case R.id.btn_camera_take_photo:
                 PhotographActivity.start(this, ACTIVITY_REQUEST_CODE);
+                break;
+            case R.id.btn_make_crash:
+                String s = null;
+                if (s.equals("a")){
+
+                }
                 break;
         }
     }

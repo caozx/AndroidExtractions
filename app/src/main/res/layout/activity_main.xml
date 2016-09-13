@@ -2,14 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:paddingBottom="@dimen/activity_vertical_margin"
-              android:paddingLeft="@dimen/activity_horizontal_margin"
-              android:paddingRight="@dimen/activity_horizontal_margin"
-              android:paddingTop="@dimen/activity_vertical_margin">
+              android:orientation="vertical">
 
     <Button
         android:id="@+id/btn_camera_take_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="拍照、图库、裁剪" />
+        android:text="拍照、图库、裁剪"/>
+
+    <Button
+        android:id="@+id/btn_make_crash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="崩溃"/>
 </LinearLayout>
